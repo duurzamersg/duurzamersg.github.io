@@ -33,7 +33,7 @@ window.onload = function() {
     !CSS.supports("display", "grid")
   ) {
     alert(
-      "Omdat onze site nieuwe technologieeën gebruikt die niet ondersteund worden door Internet Explorer raden wij aan een andere browser te gebruiken."
+      "Omdat onze site nieuwe technologieeën gebruikt die niet ondersteund worden door Internet Explorer en oudere versies van Safari raden wij aan een andere browser te gebruiken."
     );
   }
 };
