@@ -10,10 +10,10 @@ function scrollToSmooth(element) {
     inline: "nearest"
   });
   if (nav.classList.contains("active") && navUl.classList.contains("active")){
-    nav.classList.remove("active")
-    nav.classList.add("inactive")
-    navUl.classList.remove("active")
-    navUl.classList.add("inactive")
+    nav.classList.remove("active");
+    nav.classList.add("inactive");
+    navUl.classList.remove("active");
+    navUl.classList.add("inactive");
   }
 }
 
