@@ -179,6 +179,7 @@ nav ul{
   background: transparent;
   border: 1px solid var(--green);
   border-radius: 3px;
+  background: var(--primaryDark);
 }
 
 nav a{
