@@ -9,29 +9,17 @@ function scrollToSmooth(element) {
     block: "start",
     inline: "nearest"
   });
-  if (nav.classList.contains("active") && navUl.classList.contains("active")) {
-    navul.classList.remove("active");
-    navUl.classList.add("inactive");
-    nav.classList.remove("active");
-    nav.classList.add("inactive");
-  }
+  nav.classList.toggle("active");
+  navUl.classList.toggle("active");
+  nav.classList.toggle("inactive");
+  navUl.classList.toggle("inactive");
 }
 
 function toggleMenu() {
-  if (
-    nav.classList.contains("inactive") &&
-    navUl.classList.contains("inactive")
-  ) {
-    navUl.classList.remove("inactive");
-    navUl.classList.add("active");
-    nav.classList.remove("inactive");
-    nav.classList.add("active");
-  } else {
-    navUl.classList.remove("active");
-    navUl.classList.add("inactive");
-    nav.classList.remove("active");
-    nav.classList.add("inactive");
-  }
+  nav.classList.toggle("active");
+  navUl.classList.toggle("active");
+  nav.classList.toggle("inactive");
+  navUl.classList.toggle("inactive");
 }
 
 window.onload = function() {
