@@ -9,10 +9,12 @@ function scrollToSmooth(element) {
     block: "start",
     inline: "nearest"
   });
-  nav.classList.toggle("active");
-  navUl.classList.toggle("active");
-  nav.classList.toggle("inactive");
-  navUl.classList.toggle("inactive");
+  if (nav.classList.contains("active") && navUl.classList.contains("active")){
+    nav.classList.remove("active")
+    nav.classList.add("inactive")
+    navUl.classList.remove("active")
+    navUl.classList.add("inactive")
+  }
 }
 
 function toggleMenu() {
