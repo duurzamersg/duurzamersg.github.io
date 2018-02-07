@@ -216,6 +216,7 @@ opacity: 1;
     background: var(--primaryLight);
     padding: 1em;
     text-align: center;
+    word-wrap: break-word;
   }
   a.cta {
     display: none;
@@ -224,8 +225,7 @@ opacity: 1;
     grid-template-columns: 1fr;
   }
   div.contents {
-    grid-column: 1 / 2;
-    /* width: 100%; */
+    grid-column: 1 / -1;
     word-wrap: break-word;
   }
   nav ul{
@@ -240,6 +240,15 @@ opacity: 1;
   }
   nav.active{
     background: var(--primaryDark);
+  }
+  html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  div.title{
+    /* max-width: 100vw; */
+    word-wrap: break-word;
+    text-align: left;
   }
 }
 
