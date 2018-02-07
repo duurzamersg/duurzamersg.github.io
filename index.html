@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+    <title>5A project</title>
+</head>
+
+
+<body>
+    <nav id="nav" class="inactive">
+        <p class="fas fa-bars" onclick="toggleMenu()"></p>
+        <ul class="inactive" id="navul">
+            <li>
+                <a onclick="scrollToSmooth('inleiding')">Inleiding</a>
+            </li>
+            <li>
+                <a onclick="scrollToSmooth('manieren')">Welke manieren van energie zijn in gebruik en welke zijn duurzaam?</a>
+            </li>
+            <li>
+                <a onclick="scrollToSmooth('afval')">Hoeveel afval produceert de school gemiddeld per week</a>
+            </li>
+            <li>
+                <a onclick="scrollToSmooth('water')">Hoeveel water wordt er gemiddeld per week gebruikt</a>
+            </li>
+            <li>
+                <a onclick="scrollToSmooth('keurmerk')">Wat doen scholen met een duurzaamheidskeurmerk anders op het gebied van energieverbruik?</a>
+            </li>
+            <li>
+                <a onclick="scrollToSmooth('verbeteringen')">Welke oplossingen/verbeteringen kunnen worden toegepast?</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="landing">
+        <h1>Een duurzame school</h1>
+        <p>Op welke manier kan RSG Simon Vestdijk duurzamer worden op het gebied van energieverbruik?</p>
+        <a class="cta" onclick="scrollToSmooth('content')">Onze ideeën</a>
+    </div>
+    <div class="content" id="content">
+        <div class="contents heading" id="inleiding">
+            <div class="title">
+                <p class="fas fa-leaf"></p>
+                <p>Inleiding</p>
+            </div>
+            <p>Vanaf maandag 29 januari tot vrijdag 2 februari kregen wij bezoek van een aantal sprekers die vertelden over
+                erg uiteenlopende, maar stuk voor stuk zeer interessante onderwerpen. Vooral de presentaties over duurzaamheid
+                inspireerden ons om onze eigen school, RSG Simon Vestdijk, duurzamer te maken.
+                <br/>
+                <br/> Maar we wisten nog niet wat de school al deed om bij te dragen aan het verbeteren van het milieu en welke
+                opties nog mogelijk waren om de uitstoot, het watergebruik en het afval nog meer te verminderen, dus besloten
+                wij dit te gaan onderzoeken in de twee weken die we gekregen hadden voor het 5 atheneum project. Al snel
+                besloten we dat we eerst informatie moesten winnen over de situatie waar de school zich nu in bevindt, dus
+                hebben we mails verstuurd naar het bestuur en de faciliteit leider van onze school en kregen al snel toestemming
+                om een interview met hen af te nemen, uit dit interview kwam naar voren en deze informatie kunt u terugvinden
+                in dit verslag. Ook hebben we de conciërges van de school geïnterviewd over het afval en wat hier mee gebeurd
+                nadat het door de studenten, docenten en medewerkers van de school wordt weggegooid.
+                <br/>
+                <br/> Voordat we met oplossingen konden komen moesten we eerst uitzoeken wat er allemaal mogelijk was om een school
+                groener te maken, al snel kwamen we via het duurzaamheidskeurmerk “Eco-schools” uit op het Nordwin college
+                in Leeuwarden en hiermee hebben we een bezoek met rondleiding geregeld, waarin Uiteindelijk zijn we met al
+                deze verzamelde informatie aan de slag gegaan om verbeteringen te bedenken om van RSG Simon Vestdijk een
+                “groene school” te maken, deze verbeteringen kunt u in dit verslag en op onze website terugvinden. Onthoud
+                dat in de strijd tegen klimaat verandering alle kleine beetjes helpen en het lokale, globaal gemaakt kan
+                worden.
+            </p>
+        </div>
+        <div class="contents" id="manieren">
+            <div class="title">
+                <p class="fas fa-question"></p>
+                <p>Welke manieren van energie zijn in gebruik en welke zijn duurzaam?</p>
+            </div>
+            <p></p>
+        </div>
+        <div class="contents">
+            <div class="title">
+                <p class="fas fa-bolt"></p>
+                <p>De methoden</p>
+            </div>
+        </div>
+        <div class="contents" id="afval">
+            <div class="title">
+                <p class="fas fa-question"></p>
+                <p>Hoeveel afval produceert de school gemiddeld per week?</p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="title">
+                <p class="fas fa-chart-bar"></p>
+                <p>De cijfers</p>
+            </div>
+        </div>
+        <div class="contents" id="water">
+            <div class="title">
+                <p class="fas fa-question"></p>
+                <p>Hoeveel water wordt er gemiddeld per week gebruikt?</p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="title">
+                <p class="fas fa-chart-bar"></p>
+                <p>De cijfers</p>
+            </div>
+        </div>
+        <div class="contents" id="keurmerk">
+            <div class="title">
+                <p class="fas fa-question"></p>
+                <p>Wat doen scholen met een duurzaamheidskeurmerk anders op het gebied van energieverbruik?</p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="title">
+                <p class="fas fa-graduation-cap"></p>
+                <p>Duurzame scholen in Nederland</p>
+            </div>
+        </div>
+        <div class="contents" id="verbeteringen">
+            <div class="title">
+                <p class="fas fa-question"></p>
+                <p>Welke oplossingen/verbeteringen kunnen worden toegepast?</p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="title">
+                <p class="fas fa-check"></p>
+                <p>De oplossingen</p>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
