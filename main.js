@@ -9,7 +9,7 @@ function scrollToSmooth(element) {
     block: "start",
     inline: "nearest"
   });
-  if (nav.classList.contains("active") && navUl.classList.contains("active")){
+  if (nav.classList.contains("active") && navUl.classList.contains("active")) {
     nav.classList.remove("active");
     nav.classList.add("inactive");
     navUl.classList.remove("active");
