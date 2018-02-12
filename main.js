@@ -26,7 +26,7 @@ function toggleMenu() {
   if (navUl.classList.contains("inactive")) {
     navLinks.forEach(navlink => (navlink.style.visibility = "hidden"));
   }
-  if (navUl.classList.contains("active")) {
+  else if (navUl.classList.contains("active")) {
     navlinks.forEach(navlink => (navlink.style.visibility = "visible"));
   }
 }
