@@ -217,6 +217,10 @@ div.gallery > img{
     width: 100%;
     height: auto;
 }
+
+div.contents a{
+    color: var(--primaryLight);
+}
 @media all and (max-width: 768px) {
     div.landing {
         display: flex;
