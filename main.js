@@ -2,6 +2,7 @@ const ctaIdeas = document.querySelector("#ctaideas");
 const contentDiv = document.querySelector("#content");
 const navUl = document.querySelector("#navul");
 const nav = document.querySelector("#nav");
+const navLinks = document.querySelectorAll("#nav a");
 
 function scrollToSmooth(element) {
   document.getElementById(element).scrollIntoView({
@@ -22,6 +23,12 @@ function toggleMenu() {
   navUl.classList.toggle("active");
   nav.classList.toggle("inactive");
   navUl.classList.toggle("inactive");
+  if (navUl.classList.contains("inactive")) {
+    navLinks.forEach(navlink => (navlink.style.visibility = "hidden"));
+  }
+  if (navUl.classList.contains("active")) {
+    navlinks.forEach(navlink => (navlink.style.visibility = "visible"));
+  }
 }
 
 window.onload = function() {
