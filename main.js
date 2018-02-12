@@ -24,9 +24,15 @@ function toggleMenu() {
   nav.classList.toggle("inactive");
   navUl.classList.toggle("inactive");
   if (navUl.classList.contains("inactive")) {
-    navLinks.forEach(navlink => (navlink.style.visibility = "hidden"));
+    navLinks.forEach(navlink => {
+      navlink.style.pointerEvents = "none";
+      navlink.style.cursor = "default";
+    });
   } else if (navUl.classList.contains("active")) {
-    navlinks.forEach(navlink => (navlink.style.visibility = "visible"));
+    navlinks.forEach(navlink => {
+      navlink.style.pointerEvents = "all";
+      navlink.style.cursor = "pointer";
+    });
   }
 }
 
@@ -42,4 +48,8 @@ window.onload = function() {
       "Omdat onze site nieuwe technologieeën gebruikt die niet ondersteund worden door Internet Explorer en oudere versies van Safari raden wij aan een andere browser te gebruiken."
     );
   }
+  navLinks.forEach(navlink => {
+    navlink.style.pointerEvents = "none";
+    navlink.style.cursor = "default";
+  });
 };
