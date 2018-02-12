@@ -208,6 +208,14 @@ nav ul.active {
     opacity: 1;
 }
 
+div.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+div.gallery > img{
+    width: 100%;
+    height: auto;
+}
 @media all and (max-width: 768px) {
     div.landing {
         display: flex;
