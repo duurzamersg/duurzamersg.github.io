@@ -2,7 +2,7 @@ const ctaIdeas = document.querySelector("#ctaideas");
 const contentDiv = document.querySelector("#content");
 const navUl = document.querySelector("#navul");
 const nav = document.querySelector("#nav");
-const navLinks = document.querySelectorAll("#nav a");
+const navLinks = document.querySelectorAll("nav a");
 
 function scrollToSmooth(element) {
   document.getElementById(element).scrollIntoView({
@@ -15,6 +15,10 @@ function scrollToSmooth(element) {
     nav.classList.add("inactive");
     navUl.classList.remove("active");
     navUl.classList.add("inactive");
+    navLinks.forEach(navlink => {
+      navlink.style.pointerEvents = "none";
+      navlink.style.cursor = "default";
+    });
   }
 }
 
@@ -29,9 +33,9 @@ function toggleMenu() {
       navlink.style.cursor = "default";
     });
   } else if (navUl.classList.contains("active")) {
-    navlinks.forEach(navlink => {
-      navlink.style.pointerEvents = "all";
-      navlink.style.cursor = "pointer";
+    console.log("active");
+    navLinks.forEach(navlink => {
+      navlink.removeAttribute("style");
     });
   }
 }
