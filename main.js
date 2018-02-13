@@ -6,6 +6,7 @@ const navLinks = document.querySelectorAll("nav a");
 const lightbox = document.querySelector("div.lightbox");
 const lightboxImage = document.querySelector("div img#lightboxImage");
 const closeLightboxSvg = document.querySelector("#closeLightbox");
+const gallery2Images = document.querySelectorAll("#gallery2 img");
 
 function scrollToSmooth(element) {
   document.getElementById(element).scrollIntoView({
@@ -39,6 +40,12 @@ function toggleMenu() {
     console.log("active");
     navLinks.forEach(navlink => {
       navlink.removeAttribute("style");
+      gallery2Images.forEach(image => {
+        image.stye.display = "inline";
+      });
+    });
+    gallery2Images.forEach(image => {
+      image.style.display = "none";
     });
   }
 }
@@ -47,7 +54,11 @@ function openLightbox(src) {
   console.log("Opened lightbox");
   if (lightbox.style.display === "none") {
     lightbox.style.display = "flex";
+    lightbox.style.zIndex = "3";
     lightboxImage.src = src;
+    gallery2Images.forEach(image => {
+      image.style.zIndex = "0";
+    });
   } else {
     lightbox.style.display = "none";
   }
@@ -57,6 +68,10 @@ function closeLightbox() {
   console.log("Close lightbox");
   if (lightbox.style.display === "flex") {
     lightbox.style.display = "none";
+    lightbox.style.zIndex = "0";
+    gallery2Images.forEach(image => {
+      image.style.zIndex = "3";
+    });
   }
 }
 
