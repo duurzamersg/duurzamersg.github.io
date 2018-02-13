@@ -41,9 +41,6 @@ function toggleMenu() {
     navLinks.forEach(navlink => {
       navlink.removeAttribute("style");
     });
-    gallery2Images.forEach(image => {
-      image.style.display = "none";
-    });
   }
 }
 
