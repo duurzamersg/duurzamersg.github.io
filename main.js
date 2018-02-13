@@ -3,6 +3,9 @@ const contentDiv = document.querySelector("#content");
 const navUl = document.querySelector("#navul");
 const nav = document.querySelector("#nav");
 const navLinks = document.querySelectorAll("nav a");
+const lightbox = document.querySelector("div.lightbox");
+const lightboxImage = document.querySelector("div img#lightboxImage");
+const closeLightboxSvg = document.querySelector("#closeLightbox");
 
 function scrollToSmooth(element) {
   document.getElementById(element).scrollIntoView({
@@ -37,6 +40,23 @@ function toggleMenu() {
     navLinks.forEach(navlink => {
       navlink.removeAttribute("style");
     });
+  }
+}
+
+function openLightbox(src) {
+  console.log("Opened lightbox");
+  if (lightbox.style.display === "none") {
+    lightbox.style.display = "flex";
+    lightboxImage.src = src;
+  } else {
+    lightbox.style.display = "none";
+  }
+}
+
+function closeLightbox() {
+  console.log("Close lightbox");
+  if (lightbox.style.display === "flex") {
+    lightbox.style.display = "none";
   }
 }
 

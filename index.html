@@ -100,8 +100,8 @@
                 <p>De cijfers</p>
             </div>
             <div id="gallery2">
-                <img src="./images/elektraverbruik jaar 2017.png">
-                <img src="./images/gasverbruik hoofdgebouw jaar 2017.png">
+                <img src="./images/elektraverbruik jaar 2017.png" onclick='openLightbox("./images/elektraverbruik jaar 2017.png")'>
+                <img src="./images/gasverbruik hoofdgebouw jaar 2017.png" onclick='openLightbox("./images/gasverbruik hoofdgebouw jaar 2017.png")'>
             </div>
         </div>
         <div class="contents" id="afval">
@@ -130,6 +130,8 @@
                 <p class="fas fa-chart-bar"></p>
                 <p>De cijfers</p>
             </div>
+
+
         </div>
         <div class="contents" id="water">
             <div class="title">
@@ -221,6 +223,12 @@
                 <p>De oplossingen</p>
             </div>
         </div>
+    </div>
+    <div class="lightbox" style="display: none">
+        <div onclick="closeLightbox()">
+            <i class="fas fa-times" id="closeLightbox"></i>
+        </div>
+        <img src="" id="lightboxImage">
     </div>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="main.js"></script>
