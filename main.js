@@ -40,9 +40,6 @@ function toggleMenu() {
     console.log("active");
     navLinks.forEach(navlink => {
       navlink.removeAttribute("style");
-      gallery2Images.forEach(image => {
-        image.stye.display = "inline";
-      });
     });
     gallery2Images.forEach(image => {
       image.style.display = "none";
