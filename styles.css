@@ -263,6 +263,15 @@ div.lightbox > div > svg{
     margin: 0.5em;
     cursor: pointer;
 }
+
+div.contents > h2{
+    text-transform: uppercase;
+    color: var(--primaryDark);
+    margin: 1em;
+}
+#verbeteringen{
+    grid-column: 1 / -1;
+}
 @media all and (max-width: 768px) {
     div.landing {
         display: flex;
