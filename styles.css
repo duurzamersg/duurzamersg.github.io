@@ -221,6 +221,17 @@ div.gallery > img{
 div.contents a{
     color: var(--primaryLight);
 }
+
+div#gallery2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+
+div#gallery2 > *{
+    width: 100%;
+}
 @media all and (max-width: 768px) {
     div.landing {
         display: flex;
